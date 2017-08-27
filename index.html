@@ -256,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/24/心累/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/27/python学习之路-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yanghui">
@@ -275,7 +275,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/24/心累/" itemprop="url">心累</a></h1>
+                <a class="post-title-link" href="/2017/08/27/python学习之路-1/" itemprop="url">python学习之路(1)</a></h1>
         
 
         <div class="post-meta">
@@ -287,8 +287,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-24T20:54:51+08:00">
-                2017-07-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-27T21:59:59+08:00">
+                2017-08-27
               </time>
             
 
@@ -324,7 +324,120 @@
       
         
           
-            <p>最近好忙啊 ！ 心好累</p>
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/python学习之路（1）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yanghui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="KariSeyar">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/02/python学习之路（1）/" itemprop="url">python学习之路（1）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-02T10:12:54+08:00">
+                2017-08-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h6 id="一个生成优惠码简易的程序片段"><a href="#一个生成优惠码简易的程序片段" class="headerlink" title="一个生成优惠码简易的程序片段"></a>一个生成优惠码简易的程序片段</h6><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">from learnpy.connect.mysql_init import *</div><div class="line"></div><div class="line">import uuid</div><div class="line"></div><div class="line">CODE_NUM = 200</div><div class="line"></div><div class="line"></div><div class="line">def barncode():</div><div class="line">    return [str(uuid.uuid1()).replace(&apos;-&apos;,&apos;&apos;).upper() for i in range(CODE_NUM)]</div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    mysql = mysql_init()</div><div class="line">    mysql.connect()</div><div class="line">    cur = mysql.cursor()</div><div class="line">    codeArray = barncode()</div><div class="line">    print(codeArray)</div><div class="line">    cur.executemany(&apos;INSERT INTO code(code) VALUES(%s)&apos;, codeArray)</div><div class="line">    mysql.commit()</div><div class="line">    cur.close()</div><div class="line">    mysql.close()</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/python3</div><div class="line"># -*- coding: UTF-8 -*-</div><div class="line"></div><div class="line">import pymysql</div><div class="line">import uuid</div><div class="line"></div><div class="line"></div><div class="line">class mysql_init(object):</div><div class="line">    def __init__(self):</div><div class="line">        self.conn = None</div><div class="line"></div><div class="line">    def connect(self):</div><div class="line">        self.conn = pymysql.connect(</div><div class="line">            &apos;localhost&apos;,</div><div class="line">            &apos;root&apos;,</div><div class="line">            &apos;&apos;,</div><div class="line">            &apos;pytest&apos;</div><div class="line">        )</div><div class="line"></div><div class="line">    def cursor(self):</div><div class="line">        try:</div><div class="line">            return self.conn.cursor()</div><div class="line">        except (ArithmeticError, pymysql.OperationalError):</div><div class="line">            self.connect()</div><div class="line">            return self.conn.cursor()</div><div class="line"></div><div class="line">    def commit(self):</div><div class="line">        self.conn.commit()</div><div class="line"></div><div class="line">    def close(self):</div><div class="line">        self.conn.cursor().close()</div><div class="line">        self.conn.close()</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &quot;__main__&quot;:</div><div class="line">    mysql = mysql_init()</div><div class="line">    mysql.connect()</div><div class="line">    cur = mysql.cursor()</div><div class="line">    sqldata = generateActivationCode(20)</div><div class="line">    cur.executemany(&apos;INSERT INTO code(code) VALUES(%s)&apos;, sqldata)</div><div class="line">    cur.close()</div><div class="line">    mysql.commit()</div><div class="line">    mysql.close()</div></pre></td></tr></table></figure>
 
           
         
@@ -551,120 +664,8 @@
 <p>1，安装 <a href="https://www.baidu.com" target="_blank" rel="external">hexo</a>;<br>&gt;</p>
 <blockquote>
 <p>   $ hexo i -g</p>
-<p>   ss</p>
 </blockquote>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/05/page/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yanghui">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="KariSeyar">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/05/page/" itemprop="url">happy</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-05T09:38:16+08:00">
-                2017-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
           
         
       
@@ -876,7 +877,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">Tags</span>
               
             </div>
