@@ -256,6 +256,160 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/20/python-学习之路（3）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yanghui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="KariSeyar">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/20/python-学习之路（3）/" itemprop="url">python 学习之路（三）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-20T22:16:07+08:00">
+                2017-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="python3-中字符串的方法总结"><a href="#python3-中字符串的方法总结" class="headerlink" title="python3 中字符串的方法总结"></a>python3 中字符串的方法总结</h3><hr>
+<h4 id="字符串方法总结"><a href="#字符串方法总结" class="headerlink" title="字符串方法总结"></a>字符串方法总结</h4><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>具体用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>字符串的连接 </td>
+</tr>
+<tr>
+<td>*</td>
+<td>字符串相乘 =&gt; ‘fe’*2 = ‘fefe’</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>通过索引获取 =&gt; ‘esf’[1] = ‘s’</td>
+</tr>
+<tr>
+<td>[:]</td>
+<td>通过索引截取 =&gt; ‘qwerty’[1:3] = ‘we’</td>
+</tr>
+<tr>
+<td>in</td>
+<td>判断存在返回布尔值</td>
+</tr>
+<tr>
+<td>not in</td>
+<td>判断不存在返回布尔值</td>
+</tr>
+<tr>
+<td>r/R</td>
+<td>原始字符串 - 原始字符串：所有的字符串都是直接按照字面的意思来使用，没有转义特殊或不能打印的字符。 原始字符串除在字符串的第一个引号前加上字母”r”（可以大小写）以外，与普通字符串有着几乎完全相同的语法</td>
+</tr>
+<tr>
+<td>%</td>
+<td>格式化字符串</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/10/python-学习之路（2）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -324,7 +478,8 @@
       
         
           
-            <h2 id="一个生成验证码的小程序"><a href="#一个生成验证码的小程序" class="headerlink" title="####一个生成验证码的小程序"></a>####一个生成验证码的小程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/python3</div><div class="line"># -*- coding: UTF-8 -*-</div><div class="line"># edit by yanghui</div><div class="line">#tips: ⌃⌥O 优化import</div><div class="line"></div><div class="line">import random</div><div class="line"></div><div class="line">from PIL import Image, ImageFont, ImageDraw, ImageFilter</div><div class="line"></div><div class="line"></div><div class="line">class verificationCode(object):</div><div class="line">    def __init__(self):</div><div class="line">        self.font = &apos;SFNSTextItalic&apos;</div><div class="line">        self.height = 60</div><div class="line">        self.width = 60 * 4</div><div class="line">        self.image = None</div><div class="line">        self.draw = None</div><div class="line">        self.imagefont = None</div><div class="line"></div><div class="line">    def buidImg(self):</div><div class="line">        self.image = Image.new(&apos;RGB&apos;, (self.width, self.height), (255, 255, 255))</div><div class="line">        return self.image</div><div class="line"></div><div class="line">    def buildImgFont(self):</div><div class="line">        return ImageFont.truetype(self.font, 36)</div><div class="line"></div><div class="line">    def drawImg(self):</div><div class="line">        self.draw = ImageDraw.Draw(self.image)</div><div class="line"></div><div class="line">    def fillImg(self):</div><div class="line">        for x in range(self.width):</div><div class="line">            for y in range(self.height):</div><div class="line">                self.draw.point((x, y), fill=self.rondomColor())</div><div class="line"></div><div class="line">    def rondomColor(self):</div><div class="line">        return random.randint(64, 255), random.randint(64, 255), random.randint(64, 255)</div><div class="line"></div><div class="line">    def rondomColor2(self):</div><div class="line">        return random.randint(32, 127), random.randint(32, 127), random.randint(32, 127)</div><div class="line"></div><div class="line">    def randomChar(self):</div><div class="line">        return chr(random.randint(65, 90))</div><div class="line"></div><div class="line">    def drawFont(self):</div><div class="line">        for t in range(4):</div><div class="line">            self.draw.text((60 * t + 10, 10), self.randomChar(), font=self.buildImgFont(), fill=self.rondomColor2())</div><div class="line"></div><div class="line">    def imgFilter(self):</div><div class="line">        return self.image.filter(ImageFilter.BLUR)</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    veriCode = verificationCode()</div><div class="line">    veriCode.buidImg()</div><div class="line">    veriCode.buildImgFont()</div><div class="line">    veriCode.drawImg()</div><div class="line">    veriCode.fillImg()</div><div class="line">    veriCode.drawFont()</div><div class="line">    print(&apos;drawFont catch!&apos;)</div><div class="line">    veriCode.imgFilter()</div><div class="line">    veriCode.image.save(&apos;veriCode.jpg&apos;, &apos;jpeg&apos;)</div></pre></td></tr></table></figure>
+            <h4 id="一个生成验证码的小程序"><a href="#一个生成验证码的小程序" class="headerlink" title="一个生成验证码的小程序"></a>一个生成验证码的小程序</h4><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/python3</div><div class="line"># -*- coding: UTF-8 -*-</div><div class="line"># edit by yanghui</div><div class="line">#tips: ⌃⌥O 优化import</div><div class="line"></div><div class="line">import random</div><div class="line"></div><div class="line">from PIL import Image, ImageFont, ImageDraw, ImageFilter</div><div class="line"></div><div class="line"></div><div class="line">class verificationCode(object):</div><div class="line">    def __init__(self):</div><div class="line">        self.font = &apos;SFNSTextItalic&apos;</div><div class="line">        self.height = 60</div><div class="line">        self.width = 60 * 4</div><div class="line">        self.image = None</div><div class="line">        self.draw = None</div><div class="line">        self.imagefont = None</div><div class="line"></div><div class="line">    def buidImg(self):</div><div class="line">        self.image = Image.new(&apos;RGB&apos;, (self.width, self.height), (255, 255, 255))</div><div class="line">        return self.image</div><div class="line"></div><div class="line">    def buildImgFont(self):</div><div class="line">        return ImageFont.truetype(self.font, 36)</div><div class="line"></div><div class="line">    def drawImg(self):</div><div class="line">        self.draw = ImageDraw.Draw(self.image)</div><div class="line"></div><div class="line">    def fillImg(self):</div><div class="line">        for x in range(self.width):</div><div class="line">            for y in range(self.height):</div><div class="line">                self.draw.point((x, y), fill=self.rondomColor())</div><div class="line"></div><div class="line">    def rondomColor(self):</div><div class="line">        return random.randint(64, 255), random.randint(64, 255), random.randint(64, 255)</div><div class="line"></div><div class="line">    def rondomColor2(self):</div><div class="line">        return random.randint(32, 127), random.randint(32, 127), random.randint(32, 127)</div><div class="line"></div><div class="line">    def randomChar(self):</div><div class="line">        return chr(random.randint(65, 90))</div><div class="line"></div><div class="line">    def drawFont(self):</div><div class="line">        for t in range(4):</div><div class="line">            self.draw.text((60 * t + 10, 10), self.randomChar(), font=self.buildImgFont(), fill=self.rondomColor2())</div><div class="line"></div><div class="line">    def imgFilter(self):</div><div class="line">        return self.image.filter(ImageFilter.BLUR)</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    veriCode = verificationCode()</div><div class="line">    veriCode.buidImg()</div><div class="line">    veriCode.buildImgFont()</div><div class="line">    veriCode.drawImg()</div><div class="line">    veriCode.fillImg()</div><div class="line">    veriCode.drawFont()</div><div class="line">    print(&apos;drawFont catch!&apos;)</div><div class="line">    veriCode.imgFilter()</div><div class="line">    veriCode.image.save(&apos;veriCode.jpg&apos;, &apos;jpeg&apos;)</div></pre></td></tr></table></figure>
 <hr>
 
           
@@ -1088,7 +1243,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
