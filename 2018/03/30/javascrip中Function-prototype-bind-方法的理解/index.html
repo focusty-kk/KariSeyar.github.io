@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="javascrip中Function.prototype.bind()方法的理解bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。 1234567891011var o=&amp;#123;f: function () &amp;#123;    var self=this;    var fff=function">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/07/05/hello-world/index.html">
+<meta property="og:title" content="javascrip中Function.prototype.bind()方法的理解">
+<meta property="og:url" content="http://yoursite.com/2018/03/30/javascrip中Function-prototype-bind-方法的理解/index.html">
 <meta property="og:site_name" content="KariSeyar">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-07-05T01:28:10.000Z">
+<meta property="og:description" content="javascrip中Function.prototype.bind()方法的理解bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。 1234567891011var o=&amp;#123;f: function () &amp;#123;    var self=this;    var fff=function">
+<meta property="og:updated_time" content="2018-03-30T02:07:53.341Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="javascrip中Function.prototype.bind()方法的理解">
+<meta name="twitter:description" content="javascrip中Function.prototype.bind()方法的理解bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。 1234567891011var o=&amp;#123;f: function () &amp;#123;    var self=this;    var fff=function">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/05/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/30/javascrip中Function-prototype-bind-方法的理解/"/>
 
 
 
 
 
-  <title>Hello World | KariSeyar</title>
+  <title>javascrip中Function.prototype.bind()方法的理解 | KariSeyar</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/javascrip中Function-prototype-bind-方法的理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yanghui">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">javascrip中Function.prototype.bind()方法的理解</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-05T09:28:10+08:00">
-                2017-07-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-30T09:52:07+08:00">
+                2018-03-30
               </time>
             
 
@@ -319,16 +319,39 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h4 id="javascrip中Function-prototype-bind-方法的理解"><a href="#javascrip中Function-prototype-bind-方法的理解" class="headerlink" title="javascrip中Function.prototype.bind()方法的理解"></a>javascrip中Function.prototype.bind()方法的理解</h4><p>bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var o=&#123;</div><div class="line">f: function () &#123;</div><div class="line">    var self=this;</div><div class="line">    var fff=function() &#123;</div><div class="line">        console.log(this.value); </div><div class="line">    &#125;;</div><div class="line">    fff();</div><div class="line">&#125;,</div><div class="line">value: &quot;Hello World!&quot;</div><div class="line">&#125;;</div><div class="line">o.f(); // undefined</div></pre></td></tr></table></figure>
+<hr>
+<pre><code>此时的this 指向的是window对象 
+</code></pre><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var o=&#123;</div><div class="line">f: function () &#123;</div><div class="line">    var self=this;</div><div class="line">    var fff=function() &#123;</div><div class="line">        console.log(this.value); // bind(this) 中 this 指向的是o，这里也可直接写成 bind(o)</div><div class="line">    &#125;.bind(this);</div><div class="line">    fff();</div><div class="line">&#125;,</div><div class="line">value: &quot;Hello World!&quot;</div><div class="line">&#125;;</div><div class="line">o.f(); // Hello World！</div></pre></td></tr></table></figure>
+<hr>
+<pre><code>这个时候在o.f初始化的时候会把this(此时的作用域是o对象生成一个新的函数)
+</code></pre><hr>
+<pre><code> 更普遍的使用情形
+function f(y,z){
+return this.x+y+z;
+}
+var m=f.bind({x:1},2); 
+console.log(m(3));  // 6
 
+### bind背后的原理
+
+Function.prototype.bindTest = function(scope){
+    var fn = this;
+    return function(){
+        return fn.apply(scope,arguments);
+    }
+}
+测试的结果：
+var foo = {x: &quot;Foo &quot;};
+var bar = function (str) {
+    console.log(this.x+(arguments.length===0?&apos;&apos;:str));
+};
+bar();                                   // undefined
+var testBindBar = bar.testBind(foo);     // 绑定 foo
+testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
+</code></pre>
       
     </div>
 
@@ -364,15 +387,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/20/python-学习之路（3）/" rel="next" title="python 学习之路（三）">
+                <i class="fa fa-chevron-left"></i> python 学习之路（三）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/05/github和hexo使用搭建io.page/" rel="prev" title="hexo-github 一点点的总结">
-                hexo-github 一点点的总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -444,7 +467,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
@@ -492,7 +515,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#javascrip中Function-prototype-bind-方法的理解"><span class="nav-number">1.</span> <span class="nav-text">javascrip中Function.prototype.bind()方法的理解</span></a></li></ol></div>
             
 
           </div>
@@ -515,7 +538,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
