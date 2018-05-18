@@ -99,7 +99,8 @@
 <meta property="og:url" content="http://yoursite.com/2018/03/30/javascrip中Function-prototype-bind-方法的理解/index.html">
 <meta property="og:site_name" content="KariSeyar">
 <meta property="og:description" content="javascrip中Function.prototype.bind()方法的理解bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。 1234567891011var o=&amp;#123;f: function () &amp;#123;    var self=this;    var fff=function">
-<meta property="og:updated_time" content="2018-03-30T02:07:53.341Z">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-18T02:53:46.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascrip中Function.prototype.bind()方法的理解">
 <meta name="twitter:description" content="javascrip中Function.prototype.bind()方法的理解bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。 1234567891011var o=&amp;#123;f: function () &amp;#123;    var self=this;    var fff=function">
@@ -154,7 +155,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -202,7 +203,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -212,7 +213,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -282,7 +283,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-30T09:52:07+08:00">
                 2018-03-30
@@ -320,38 +321,16 @@
 
       
         <h4 id="javascrip中Function-prototype-bind-方法的理解"><a href="#javascrip中Function-prototype-bind-方法的理解" class="headerlink" title="javascrip中Function.prototype.bind()方法的理解"></a>javascrip中Function.prototype.bind()方法的理解</h4><p>bind() 方法的主要作用就是将函数绑定至某个对象，bind() 方法会创建一个函数，函数体内this对象的值会被绑定到传入bind() 函数的值。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var o=&#123;</div><div class="line">f: function () &#123;</div><div class="line">    var self=this;</div><div class="line">    var fff=function() &#123;</div><div class="line">        console.log(this.value); </div><div class="line">    &#125;;</div><div class="line">    fff();</div><div class="line">&#125;,</div><div class="line">value: &quot;Hello World!&quot;</div><div class="line">&#125;;</div><div class="line">o.f(); // undefined</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var o=&#123;</span><br><span class="line">f: function () &#123;</span><br><span class="line">    var self=this;</span><br><span class="line">    var fff=function() &#123;</span><br><span class="line">        console.log(this.value); </span><br><span class="line">    &#125;;</span><br><span class="line">    fff();</span><br><span class="line">&#125;,</span><br><span class="line">value: &quot;Hello World!&quot;</span><br><span class="line">&#125;;</span><br><span class="line">o.f(); // undefined</span><br></pre></td></tr></table></figure>
 <hr>
 <pre><code>此时的this 指向的是window对象 
 </code></pre><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var o=&#123;</div><div class="line">f: function () &#123;</div><div class="line">    var self=this;</div><div class="line">    var fff=function() &#123;</div><div class="line">        console.log(this.value); // bind(this) 中 this 指向的是o，这里也可直接写成 bind(o)</div><div class="line">    &#125;.bind(this);</div><div class="line">    fff();</div><div class="line">&#125;,</div><div class="line">value: &quot;Hello World!&quot;</div><div class="line">&#125;;</div><div class="line">o.f(); // Hello World！</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var o=&#123;</span><br><span class="line">f: function () &#123;</span><br><span class="line">    var self=this;</span><br><span class="line">    var fff=function() &#123;</span><br><span class="line">        console.log(this.value); // bind(this) 中 this 指向的是o，这里也可直接写成 bind(o)</span><br><span class="line">    &#125;.bind(this);</span><br><span class="line">    fff();</span><br><span class="line">&#125;,</span><br><span class="line">value: &quot;Hello World!&quot;</span><br><span class="line">&#125;;</span><br><span class="line">o.f(); // Hello World！</span><br></pre></td></tr></table></figure>
 <hr>
 <pre><code>这个时候在o.f初始化的时候会把this(此时的作用域是o对象生成一个新的函数)
 </code></pre><hr>
-<pre><code> 更普遍的使用情形
-function f(y,z){
-return this.x+y+z;
-}
-var m=f.bind({x:1},2); 
-console.log(m(3));  // 6
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> 更普遍的使用情形</span><br><span class="line">function f(y,z)&#123;</span><br><span class="line">return this.x+y+z;</span><br><span class="line">&#125;</span><br><span class="line">var m=f.bind(&#123;x:1&#125;,2); </span><br><span class="line">console.log(m(3));  // 6</span><br><span class="line"></span><br><span class="line">### bind背后的原理</span><br><span class="line"></span><br><span class="line">Function.prototype.bindTest = function(scope)&#123;</span><br><span class="line">    var fn = this;</span><br><span class="line">    return function()&#123;</span><br><span class="line">        return fn.apply(scope,arguments);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">测试的结果：</span><br><span class="line">var foo = &#123;x: &quot;Foo &quot;&#125;;</span><br><span class="line">var bar = function (str) &#123;</span><br><span class="line">    console.log(this.x+(arguments.length===0?&apos;&apos;:str));</span><br><span class="line">&#125;;</span><br><span class="line">bar();                                   // undefined</span><br><span class="line">var testBindBar = bar.testBind(foo);     // 绑定 foo</span><br><span class="line">testBindBar(&quot;Bar!&quot;);                     // Foo Bar!</span><br></pre></td></tr></table></figure>
 
-### bind背后的原理
-
-Function.prototype.bindTest = function(scope){
-    var fn = this;
-    return function(){
-        return fn.apply(scope,arguments);
-    }
-}
-测试的结果：
-var foo = {x: &quot;Foo &quot;};
-var bar = function (str) {
-    console.log(this.x+(arguments.length===0?&apos;&apos;:str));
-};
-bar();                                   // undefined
-var testBindBar = bar.testBind(foo);     // 绑定 foo
-testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
-</code></pre>
       
     </div>
 
@@ -396,6 +375,10 @@ testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/02/react-router-dom的使用/" rel="prev" title="react-router-dom的使用">
+                react-router-dom的使用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -444,10 +427,10 @@ testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -467,8 +450,8 @@ testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -481,7 +464,7 @@ testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               
             </div>
           
@@ -547,7 +530,7 @@ testBindBar(&quot;Bar!&quot;);                     // Foo Bar!
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

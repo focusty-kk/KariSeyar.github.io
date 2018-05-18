@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="一个生成优惠码简易的程序片段 1234567891011121314151617181920from learnpy.connect.mysql_init import *import uuidCODE_NUM = 200def barncode():    return [str(uuid.uuid1()).replace(&amp;apos;-&amp;apos;,&amp;apos;&amp;apos;).upper()">
+<meta name="description" content="自娱自乐，啊哈哈">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python学习之路（1）">
-<meta property="og:url" content="http://yoursite.com/2017/08/02/python学习之路（1）/index.html">
+<meta property="og:title" content="react学习">
+<meta property="og:url" content="http://yoursite.com/2018/05/15/react学习/index.html">
 <meta property="og:site_name" content="KariSeyar">
-<meta property="og:description" content="一个生成优惠码简易的程序片段 1234567891011121314151617181920from learnpy.connect.mysql_init import *import uuidCODE_NUM = 200def barncode():    return [str(uuid.uuid1()).replace(&amp;apos;-&amp;apos;,&amp;apos;&amp;apos;).upper()">
+<meta property="og:description" content="自娱自乐，啊哈哈">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2017-08-27T14:48:57.000Z">
+<meta property="og:updated_time" content="2018-05-15T07:07:41.897Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python学习之路（1）">
-<meta name="twitter:description" content="一个生成优惠码简易的程序片段 1234567891011121314151617181920from learnpy.connect.mysql_init import *import uuidCODE_NUM = 200def barncode():    return [str(uuid.uuid1()).replace(&amp;apos;-&amp;apos;,&amp;apos;&amp;apos;).upper()">
+<meta name="twitter:title" content="react学习">
+<meta name="twitter:description" content="自娱自乐，啊哈哈">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/02/python学习之路（1）/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/15/react学习/"/>
 
 
 
 
 
-  <title>python学习之路（1） | KariSeyar</title>
+  <title>react学习 | KariSeyar</title>
   
 
 
@@ -256,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/python学习之路（1）/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/15/react学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yanghui">
@@ -273,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python学习之路（1）</h1>
+          <h1 class="post-title" itemprop="name headline">react学习</h1>
         
 
         <div class="post-meta">
@@ -285,8 +285,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-02T10:12:54+08:00">
-                2017-08-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-15T15:07:41+08:00">
+                2018-05-15
               </time>
             
 
@@ -320,10 +320,7 @@
       
 
       
-        <h6 id="一个生成优惠码简易的程序片段"><a href="#一个生成优惠码简易的程序片段" class="headerlink" title="一个生成优惠码简易的程序片段"></a>一个生成优惠码简易的程序片段</h6><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from learnpy.connect.mysql_init import *</span><br><span class="line"></span><br><span class="line">import uuid</span><br><span class="line"></span><br><span class="line">CODE_NUM = 200</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def barncode():</span><br><span class="line">    return [str(uuid.uuid1()).replace(&apos;-&apos;,&apos;&apos;).upper() for i in range(CODE_NUM)]</span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    mysql = mysql_init()</span><br><span class="line">    mysql.connect()</span><br><span class="line">    cur = mysql.cursor()</span><br><span class="line">    codeArray = barncode()</span><br><span class="line">    print(codeArray)</span><br><span class="line">    cur.executemany(&apos;INSERT INTO code(code) VALUES(%s)&apos;, codeArray)</span><br><span class="line">    mysql.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    mysql.close()</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3</span><br><span class="line"># -*- coding: UTF-8 -*-</span><br><span class="line"></span><br><span class="line">import pymysql</span><br><span class="line">import uuid</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class mysql_init(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.conn = None</span><br><span class="line"></span><br><span class="line">    def connect(self):</span><br><span class="line">        self.conn = pymysql.connect(</span><br><span class="line">            &apos;localhost&apos;,</span><br><span class="line">            &apos;root&apos;,</span><br><span class="line">            &apos;&apos;,</span><br><span class="line">            &apos;pytest&apos;</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    def cursor(self):</span><br><span class="line">        try:</span><br><span class="line">            return self.conn.cursor()</span><br><span class="line">        except (ArithmeticError, pymysql.OperationalError):</span><br><span class="line">            self.connect()</span><br><span class="line">            return self.conn.cursor()</span><br><span class="line"></span><br><span class="line">    def commit(self):</span><br><span class="line">        self.conn.commit()</span><br><span class="line"></span><br><span class="line">    def close(self):</span><br><span class="line">        self.conn.cursor().close()</span><br><span class="line">        self.conn.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    mysql = mysql_init()</span><br><span class="line">    mysql.connect()</span><br><span class="line">    cur = mysql.cursor()</span><br><span class="line">    sqldata = generateActivationCode(20)</span><br><span class="line">    cur.executemany(&apos;INSERT INTO code(code) VALUES(%s)&apos;, sqldata)</span><br><span class="line">    cur.close()</span><br><span class="line">    mysql.commit()</span><br><span class="line">    mysql.close()</span><br></pre></td></tr></table></figure>
-
+        
       
     </div>
 
@@ -359,8 +356,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/05/github和hexo使用搭建io.page/" rel="next" title="hexo-github 一点点的总结">
-                <i class="fa fa-chevron-left"></i> hexo-github 一点点的总结
+              <a href="/2018/05/10/‘web端文件类型File和Blob’/" rel="next" title="‘web端文件类型File和Blob’">
+                <i class="fa fa-chevron-left"></i> ‘web端文件类型File和Blob’
               </a>
             
           </div>
@@ -368,10 +365,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/27/python学习之路-1/" rel="prev" title="python学习之路(1)">
-                python学习之路(1) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -418,17 +411,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -481,22 +465,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#一个生成优惠码简易的程序片段"><span class="nav-number">1.</span> <span class="nav-text">一个生成优惠码简易的程序片段</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
